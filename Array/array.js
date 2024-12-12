@@ -61,5 +61,3 @@ console.log("--------");
 var filterArr1 = arr1.filter(function (val) { return val % 2 === 0; });
 console.log(filterArr1);
 console.log("--------");
-// Reduce
-// Sort
