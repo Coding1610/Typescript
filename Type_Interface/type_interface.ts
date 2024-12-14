@@ -50,3 +50,58 @@ const showDeatils = (obj:TypeInterface) => {
 }
 
 showDeatils(objectInterface);
+
+
+// When use Type Interface & Type Alias
+
+// 1. Use custom type when you need unions, intersection or mapped types
+// 2. use interface when defining object shape or classes that adhere to a contarct.
+// 3. Interface can extend other interface to inherit their members.
+
+// Type Alias
+type obj1 = {
+    name:string;
+    age:number;
+}
+
+type obj2 = {
+    country:string;
+    contactNo:number;
+}
+
+type data = obj1 | obj2;
+
+const newObject:obj1&obj2 = {
+    name:"YASH",
+    age:21,
+    country:"India",
+    contactNo:9876543290
+}
+
+console.log(newObject);
+console.log("------------");
+
+
+
+// Type Interface
+interface inter1 {
+    name:string;
+    country:string;
+}
+
+interface inter2 {
+    price:number;
+    type:string;
+}
+
+interface inter extends inter1, inter2 {}
+
+const newInter : inter = {
+    name:"Lamborghini",
+    country:"Italy",
+    price:5600000,
+    type:"Sport"
+}
+
+console.log(newInter);
+console.log("-----------");

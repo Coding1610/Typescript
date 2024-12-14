@@ -26,3 +26,19 @@ var showDeatils = function (obj) {
     console.log("U are married : ".concat(isMarried));
 };
 showDeatils(objectInterface);
+var newObject = {
+    name: "YASH",
+    age: 21,
+    country: "India",
+    contactNo: 9876543290
+};
+console.log(newObject);
+console.log("------------");
+var newInter = {
+    name: "Lamborghini",
+    country: "Italy",
+    price: 5600000,
+    type: "Sport"
+};
+console.log(newInter);
+console.log("-----------");
