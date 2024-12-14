@@ -58,7 +58,8 @@ showDeatils(objectInterface);
 // 2. use interface when defining object shape or classes that adhere to a contarct.
 // 3. Interface can extend other interface to inherit their members.
 
-// Type Alias
+
+// Type Alias : same name not allow
 type obj1 = {
     name:string;
     age:number;
@@ -83,7 +84,7 @@ console.log("------------");
 
 
 
-// Type Interface
+// Type Interface : same name allow
 interface inter1 {
     name:string;
     country:string;
